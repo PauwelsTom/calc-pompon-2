@@ -1,0 +1,10 @@
+.LigneBoutonDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 2vw;
+    width: 95%;
+    height: 10vh;
+    padding-left: 1vw;
+    padding-right: 1vw;
+}

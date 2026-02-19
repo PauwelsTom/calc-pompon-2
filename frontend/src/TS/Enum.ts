@@ -1,0 +1,6 @@
+export enum Mode {
+  AJOUTER = "AJOUTER",
+  SUPPRIMER = "SUPPRIMER",
+  STATISTIQUE = "STATISTIQUE",
+  SPLIT = "SPLIT"
+};

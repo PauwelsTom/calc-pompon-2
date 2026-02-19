@@ -1,0 +1,16 @@
+:root {
+    --background: #444444;
+
+    --mode-ajouter-vide: #a6ccea;
+    --mode-ajouter: #068aef;
+    --mode-ajouter-click: #105b95;
+
+    --mode-supprimer-vide: #f1ac74;
+    --mode-supprimer: #ed6f08;
+    --mode-supprimer-click: #9a4b0a;
+    
+    --mode-split: ;
+    --mode-split-click: ;
+
+    --bouton-raz: red;
+}
