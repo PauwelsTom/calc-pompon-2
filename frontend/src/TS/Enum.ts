@@ -4,3 +4,9 @@ export enum Mode {
   STATISTIQUE = "STATISTIQUE",
   SPLIT = "SPLIT"
 };
+
+export enum Page {
+  PRINCIPALE = "Principale",
+  STATISTIQUES = "Statistiques",
+  GRAPHIQUES = "Graphiques",
+}

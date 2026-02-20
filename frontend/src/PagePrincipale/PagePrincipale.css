@@ -1,4 +1,13 @@
 .PagePrincipaleDiv {
+    position: absolute;
+    top: 0vh;
     gap: 2vh;
     width: 100vw;
+    height: 100vh;
+    transition: 1s ease;
+}
+
+.PrixTotal {
+    font-size: 5vh;
+    font-weight: 600;
 }

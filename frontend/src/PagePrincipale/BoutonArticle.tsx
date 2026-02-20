@@ -21,7 +21,7 @@ const BoutonArticle: React.FC<ButtonProps> = ({ article, onClick, mode }) => {
     return (
         <button onClick={onClick} className={get_class()}>
             <span>{article.nom}</span>
-            <span className="ArticlePrix">{article.prix}€</span>
+            <span className="ArticlePrix">{article.prix.toFixed(2)}€</span>
             <span className="ArticleQuantite">{article.quantite}</span>
         </button>
     )
