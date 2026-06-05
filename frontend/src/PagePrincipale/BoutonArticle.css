@@ -14,6 +14,11 @@
     font-size: 3vh;
 }
 
+/* En mode split l'affichage est de la forme (2/4) : un peu plus compact */
+.ArticleQuantiteSplit {
+    font-size: 2.3vh;
+}
+
 
 
 /* -- Couleurs boutons -- */
@@ -36,4 +41,24 @@
 }
 .BoutonSUPPRIMER:active {
     background-color: var(--mode-supprimer-click);
+}
+
+.BoutonSPLIT_vide {
+    background-color: var(--mode-split-vide);
+}
+.BoutonSPLIT {
+    background-color: var(--mode-split);
+}
+.BoutonSPLIT:active {
+    background-color: var(--mode-split-click);
+}
+
+.BoutonSPLIT_RETIRER_vide {
+    background-color: var(--mode-split-retirer-vide);
+}
+.BoutonSPLIT_RETIRER {
+    background-color: var(--mode-split-retirer);
+}
+.BoutonSPLIT_RETIRER:active {
+    background-color: var(--mode-split-retirer-click);
 }

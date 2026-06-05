@@ -1,6 +1,6 @@
 .ChangeModeDiv {
     position: absolute;
-    top: 1vh;
+    top: calc(env(safe-area-inset-top, 0px) + 1vh);
     right: 1vh;
     width: 7vh;
     height: 7vh;

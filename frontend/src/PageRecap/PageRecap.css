@@ -1,0 +1,71 @@
+.PageRecapDiv {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+    padding: max(2vh, env(safe-area-inset-top, 0px)) 0 calc(env(safe-area-inset-bottom, 0px) + 1.5vh);
+    background-color: var(--background);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2vh;
+
+    transition: top 1s ease;
+}
+
+.RecapRetour {
+    flex-shrink: 0;
+    width: 95%;
+    height: 8vh;
+    font-size: 2.6vh;
+    font-weight: 700;
+    color: #ffffff;
+    background-color: var(--recap-retour);
+}
+
+.RecapTotal {
+    flex-shrink: 0;
+    width: 95%;
+    min-height: 12vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.RecapMontant {
+    font-size: 7vh;
+    font-weight: 800;
+}
+
+.RecapClients {
+    flex-shrink: 0;
+    font-size: 2.4vh;
+    font-weight: 600;
+    opacity: 0.7;
+}
+
+.RecapDetail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1vh;
+}
+.RecapDetail span {
+    font-size: 3.4vh;
+    font-weight: 600;
+}
+
+.RecapBoutons {
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: row;
+    gap: 2vw;
+    width: 95%;
+    height: 10vh;
+}

@@ -1,8 +1,10 @@
 .BoutonRAZ {
     position: absolute;
-    top: 1vh;
+    top: calc(env(safe-area-inset-top, 0px) + 1vh);
     left: 1vh;
     width: 7vh;
     height: 7vh;
+    font-weight: 600;
+    color: #ffffff;
     background-color: var(--bouton-raz);
 }

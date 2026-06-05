@@ -2,16 +2,48 @@
     --background: #ffffff;
     --text-color: #000000;
 
+    /* Mode AJOUTER (bleu) */
     --mode-ajouter-vide: #a6ccea;
     --mode-ajouter: #068aef;
     --mode-ajouter-click: #105b95;
 
+    /* Mode SUPPRIMER (orange) */
     --mode-supprimer-vide: #f1ac74;
     --mode-supprimer: #ed6f08;
     --mode-supprimer-click: #9a4b0a;
-    
-    --mode-split: ;
-    --mode-split-click: ;
 
-    --bouton-raz: red;
+    /* Mode SPLIT (rose) */
+    --mode-split-vide: #f5b6d6;
+    --mode-split: #ec3f96;
+    --mode-split-click: #a01563;
+
+    /* Mode SPLIT_RETIRER (violet) */
+    --mode-split-retirer-vide: #d8b4fe;
+    --mode-split-retirer: #9333ea;
+    --mode-split-retirer-click: #6b21a8;
+
+    /* Bouton vider le panier */
+    --bouton-raz: #e23b3b;
+
+    /* Boutons de fonction (Espèces, CB, Récap, Promo, Split, Reset, Stats) */
+    --bouton-fonction: #e2e8f0;
+    --bouton-fonction-click: #c2cbd6;
+    --bouton-fonction-actif: #475569;
+    --bouton-fonction-actif-texte: #ffffff;
+
+    /* Bouton destructif (Reset) */
+    --bouton-danger: #e23b3b;
+    --bouton-danger-click: #b91c1c;
+
+    /* Page récap */
+    --recap-retour: #068aef;
+    --recap-barre-fond: #ececec;
+    --recap-barre: #068aef;       /* barres en mode quantité (bleu) */
+    --recap-barre-ca: #16a34a;    /* barres en mode chiffre d'affaires (vert) */
+
+    /* Page statistiques (comparaison) */
+    --stats-jour: #068aef;        /* jour, mode ventes (bleu) */
+    --stats-jour-pastel: #a6ccea; /* référence, mode ventes (bleu pastel) */
+    --stats-ca: #16a34a;          /* jour, mode chiffre d'affaires (vert) */
+    --stats-ca-pastel: #a7e3bf;   /* référence, mode chiffre d'affaires (vert pastel) */
 }

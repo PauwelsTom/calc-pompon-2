@@ -1,0 +1,87 @@
+.Carrousel {
+    flex: 1;
+    min-height: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5vh;
+}
+
+.CarrouselMetrique {
+    flex-shrink: 0;
+    font-size: 1.9vh;
+    font-weight: 600;
+    opacity: 0.6;
+}
+
+/* Sélecteur de catégorie (au-dessus du carrousel) */
+.CarrouselCategories {
+    flex-shrink: 0;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    gap: 1.5vw;
+    padding: 0 2vw;
+    overflow-x: auto;
+    scrollbar-width: none;
+}
+.CarrouselCategories::-webkit-scrollbar {
+    display: none;
+}
+
+.CarrouselCategorie {
+    flex-shrink: 0;
+    padding: 0.9vh 3vw;
+    border-radius: 2vh;
+    font-size: 1.7vh;
+    font-weight: 600;
+    white-space: nowrap;
+    text-transform: capitalize;
+    background-color: var(--bouton-fonction);
+}
+.CarrouselCategorie:active {
+    background-color: var(--bouton-fonction-click);
+}
+
+.CarrouselCategorieActive {
+    background-color: var(--recap-retour);
+    color: #ffffff;
+}
+
+.CarrouselPiste {
+    flex: 1;
+    min-height: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+}
+.CarrouselPiste::-webkit-scrollbar {
+    display: none;
+}
+
+.CarrouselPoints {
+    display: flex;
+    flex-direction: row;
+    gap: 1.2vw;
+    flex-shrink: 0;
+}
+
+.CarrouselPoint {
+    width: 1.6vh;
+    height: 1.6vh;
+    padding: 0;
+    border-radius: 50%;
+    background-color: var(--recap-barre-fond);
+}
+
+.CarrouselPointActif {
+    background-color: var(--recap-barre);
+}

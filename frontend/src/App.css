@@ -4,6 +4,7 @@
     left: 0;
     width: 100vw;
     height: 100vh;
+    overflow: hidden;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -21,11 +22,15 @@
 }
 
 button {
-    transition: 0.3s ease;
+    border: none;
+    color: var(--text-color);
+    font-family: inherit;
+    cursor: pointer;
+    transition: 0.2s ease;
     border-radius: 2vh;
 }
 button:active {
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 span {

@@ -4,13 +4,15 @@ import { Mode } from "../TS/Enum"
 
 interface ChangeModeProps {
     mode: Mode
-    onClick: (mode: Mode) => void
+    onClick: () => void
 }
 
 const BoutonChangeMode: React.FC<ChangeModeProps> = ({mode, onClick}) => {
+    // "−" dans les modes de retrait (supprimer du panier / de la sélection), "+" sinon.
+    const enRetrait = mode === Mode.SUPPRIMER || mode === Mode.SPLIT_RETIRER;
     return (
-        <button className={"column-center ChangeModeDiv Bouton" + mode + "_vide"} onClick={() => onClick(mode)}>
-            <span>{mode == Mode.AJOUTER ? "+" : "-"}</span>
+        <button className={"column-center ChangeModeDiv Bouton" + mode + "_vide"} onClick={onClick}>
+            <span>{enRetrait ? "−" : "+"}</span>
         </button>
     )
 }
